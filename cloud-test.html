@@ -7,5 +7,24 @@
 </head>
 <body>
     
+    <button 
+        id = "farbwechselButton" 
+        style="background-color: red; 
+        font-size: xx-large;">
+        Klick mich hart!
+    </button>
+   
+    <script>
+        
+        let farbwechselButton = document.getElementById("farbwechselButton")
+        let istRot = true
+        farbwechselButton.addEventListener('click', function(){
+        if (istRot){
+            farbwechselButton.style.backgroundColor = "green"
+        } else { 
+            farbwechselButton.style.backgroundColor = "red"
+        }
+        istRot = !istRot})
+    </script>
 </body>
 </html>
